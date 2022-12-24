@@ -1,0 +1,16 @@
+import requests 
+# print(requests.__version__)
+new_object = requests.get(r'https://randomuser.me/api/')
+# print(new_object.text)
+response = requests.get(r'https://api.thedogapi.com/')
+# print(response.text)
+response = requests.get(r'https://api.thedogapi.com/v1/breeds')
+# print(response.text)
+
+resp = requests.get("https://api.thecatapi.com/v1/images/search")
+# print(resp.text)
+print(resp.request)
+print(resp.request.url)
+print(resp.request.path_url)
+print(resp.request.method)
+print(resp.request.headers)
